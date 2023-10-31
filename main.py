@@ -1,4 +1,4 @@
-from ojos_gato import ojos_gato, update_ojos_gato_int
+from plots.ojos_gato import ojos_gato, update_ojos_gato_int
 
 if __name__ == "__main__":
   number = input("Introduce un número:\n0 - Salir \n1 - Ojos de gato fijo\n2 - Ojos de gato interactivo\n")
