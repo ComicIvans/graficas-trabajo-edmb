@@ -1,12 +1,11 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib as mpl
 import matplotlib.animation as animation
 
 
 # Set the points for the contour plot
-x = np.linspace(-5, 5, 100)
-y = np.linspace(-5, 5, 100)
+x = np.linspace(-6, 6, 100)
+y = np.linspace(-4, 4, 100)
 X, Y = np.meshgrid(x, y)
 
 def ojos_gato():
@@ -38,7 +37,7 @@ def update_ojos_gato(i):
   plt.contour(X, Y, Z)
   plt.gca().set_title(f'Ojos de gato para c = {c}')
 
-def update_ojos_gato_int():
+def ojos_gato_int():
   fig = plt.figure(1)
-  ani = animation.FuncAnimation(fig, update_ojos_gato, frames=50)
+  ani = animation.FuncAnimation(fig, update_ojos_gato, frames=100)
   plt.show()
