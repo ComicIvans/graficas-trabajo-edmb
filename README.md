@@ -13,7 +13,7 @@ Integrantes del trabajo:
 Ejemplo de instrucciones para representar las gráficas:
 1. Asegúrate de tener instalado [Python](https://www.python.org/) en el ordenador y el gestor de paquetes [pip](https://pypi.org/project/pip/).
 2. Clonar el repositorio y abrir la carpeta con un editor como [Visual Studio Code](https://code.visualstudio.com/).
-3. (Opcional) Abrir una sesión de la terminal y crear un entorno virtual. Instrucciones [aquí](https://docs.python.org/3/library/venv.html). Seleccionar como intérprete el del entorno (en Visual Studio Code, <Ctl> + <Shift> + <P> y "Seleccionar intérprete").
+3. (Opcional) Abrir una sesión de la terminal y crear un entorno virtual. Instrucciones [aquí](https://docs.python.org/3/library/venv.html). Seleccionar como intérprete el del entorno (en Visual Studio Code, `Ctrl + Shift + P` y "Seleccionar intérprete").
 4. Instalar los paquetes `matplotlib` y `numpy` con `pip install matplotlib` y `pip install numpy`.
 5. Ejecutar el código con `python3 main.py` en Linux o como sea en otros sistemas operativos.
 6. Disfrutar :D
