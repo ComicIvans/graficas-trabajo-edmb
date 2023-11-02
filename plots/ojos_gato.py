@@ -31,13 +31,16 @@ def ojos_gato():
   plt.show()
 
 def update_ojos_gato(i):
-  plt.clf()
-  c = np.linspace(1, 2, 100)[i]
-  Z = -np.log(c * np.cosh(Y) + np.sqrt(c**2 - 1) * np.cos(X))
-  plt.contour(X, Y, Z)
-  plt.gca().set_title(f'Ojos de gato para c = {c}')
+    plt.clf()
+    c = np.linspace(1, 2, 100)[i]
+    Z = -np.log(c * np.cosh(Y) + np.sqrt(c**2 - 1) * np.cos(X))
+    contour = plt.contour(X, Y, Z)
+    plt.gca().set_title(f'Ojos de gato para c = {c}')
+    #plt.savefig(f'img/ojos_gato_{i}.png')  # Save the current frame as an image
+    return contour,
 
-def ojos_gato_int():
+def ojos_gato_ani():
   fig = plt.figure(1)
   ani = animation.FuncAnimation(fig, update_ojos_gato, frames=100)
   plt.show()
+  #ani.save('ojos_gato.mp4', writer='ffmpeg', fps=60)
